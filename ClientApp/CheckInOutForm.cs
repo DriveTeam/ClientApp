@@ -28,5 +28,22 @@ namespace ClientApp
             mainForm.Show();
             this.Hide();
         }
+
+        private void btn_openScanner_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Check if scanner is connected
+                //if connected:
+                //check if scanner isnt open already, if not, open scanner and notify
+                //else give a notification that scanner is already opened
+                //else
+                //ask user to connect
+            }
+            catch
+            {
+
+            }
+        }
     }
 }
