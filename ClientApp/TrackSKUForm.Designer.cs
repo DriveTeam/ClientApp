@@ -40,9 +40,9 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TBQuantity = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BTfill = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -50,12 +50,6 @@
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.listView3 = new System.Windows.Forms.ListView();
-            this.UserID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.RFID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.FirstName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.LastName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Birthday = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -121,7 +115,7 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader4});
-            this.listView2.Location = new System.Drawing.Point(310, 27);
+            this.listView2.Location = new System.Drawing.Point(314, 30);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(263, 400);
             this.listView2.TabIndex = 6;
@@ -153,13 +147,13 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Reminder";
             // 
-            // textBox2
+            // TBQuantity
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(583, 125);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(141, 27);
-            this.textBox2.TabIndex = 13;
+            this.TBQuantity.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBQuantity.Location = new System.Drawing.Point(583, 125);
+            this.TBQuantity.Name = "TBQuantity";
+            this.TBQuantity.Size = new System.Drawing.Size(141, 27);
+            this.TBQuantity.TabIndex = 13;
             // 
             // label3
             // 
@@ -171,14 +165,15 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "Choose an item \r\nand fill in the quantity";
             // 
-            // button2
+            // BTfill
             // 
-            this.button2.Location = new System.Drawing.Point(618, 158);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Fill";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BTfill.Location = new System.Drawing.Point(618, 158);
+            this.BTfill.Name = "BTfill";
+            this.BTfill.Size = new System.Drawing.Size(106, 23);
+            this.BTfill.TabIndex = 15;
+            this.BTfill.Text = "Fill";
+            this.BTfill.UseVisualStyleBackColor = true;
+            this.BTfill.Click += new System.EventHandler(this.BTfill_Click);
             // 
             // tabControl1
             // 
@@ -193,11 +188,11 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.listView1);
-            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.BTfill);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.listView2);
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.TBQuantity);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -213,7 +208,6 @@
             this.tabPage2.Controls.Add(this.textBox10);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.textBox9);
-            this.tabPage2.Controls.Add(this.listView3);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -226,7 +220,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(519, 390);
+            this.label11.Location = new System.Drawing.Point(165, 110);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(169, 21);
             this.label11.TabIndex = 30;
@@ -235,7 +229,7 @@
             // textBox10
             // 
             this.textBox10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(405, 387);
+            this.textBox10.Location = new System.Drawing.Point(51, 107);
             this.textBox10.Name = "textBox10";
             this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(108, 29);
@@ -245,7 +239,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(121, 390);
+            this.label7.Location = new System.Drawing.Point(165, 38);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(195, 21);
             this.label7.TabIndex = 28;
@@ -254,51 +248,11 @@
             // textBox9
             // 
             this.textBox9.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(7, 387);
+            this.textBox9.Location = new System.Drawing.Point(51, 35);
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(108, 29);
             this.textBox9.TabIndex = 27;
-            // 
-            // listView3
-            // 
-            this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.UserID,
-            this.RFID,
-            this.FirstName,
-            this.LastName,
-            this.Birthday});
-            this.listView3.Location = new System.Drawing.Point(6, 6);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(702, 375);
-            this.listView3.TabIndex = 26;
-            this.listView3.UseCompatibleStateImageBehavior = false;
-            this.listView3.View = System.Windows.Forms.View.Details;
-            // 
-            // UserID
-            // 
-            this.UserID.Text = "UserID";
-            this.UserID.Width = 136;
-            // 
-            // RFID
-            // 
-            this.RFID.Text = "RFID";
-            this.RFID.Width = 156;
-            // 
-            // FirstName
-            // 
-            this.FirstName.Text = "First Name";
-            this.FirstName.Width = 139;
-            // 
-            // LastName
-            // 
-            this.LastName.Text = "Last Name";
-            this.LastName.Width = 134;
-            // 
-            // Birthday
-            // 
-            this.Birthday.Text = "Birthday";
-            this.Birthday.Width = 123;
             // 
             // TrackSKUForm
             // 
@@ -332,9 +286,9 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TBQuantity;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BTfill;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -342,11 +296,5 @@
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.ListView listView3;
-        private System.Windows.Forms.ColumnHeader UserID;
-        private System.Windows.Forms.ColumnHeader RFID;
-        private System.Windows.Forms.ColumnHeader FirstName;
-        private System.Windows.Forms.ColumnHeader LastName;
-        private System.Windows.Forms.ColumnHeader Birthday;
     }
 }

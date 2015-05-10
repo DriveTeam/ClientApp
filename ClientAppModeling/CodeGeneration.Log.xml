@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-05-10T21:42:29" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2015-05-10T21:42:29" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2015-05-10T21:42:29" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-05-10T21:42:29" Importance="Diagnostic" Text="ProjectPath = ..\ClientAppModelingLib\ClientAppModelingLib.csproj" />
+  <Message Timestamp="2015-05-10T21:42:29" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-05-10T21:42:29" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-05-10T21:42:29" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-05-10T21:42:29" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-05-10T21:42:29" Importance="Medium" Text="ClientAppModeling's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'ClientAppModeling::ItemsForBorrow' -  (Class), 'ClientAppModeling::Camping' -  (Class), 'ClientAppModeling::User' -  (Class), 'ClientAppModeling::Event' -  (Class), 'ClientAppModeling::ItemsForSell' -  (Class), 'ClientAppModeling::AccountTransaction' -  (Class) " />
+  <Message Timestamp="2015-05-10T21:42:44" Importance="Medium" Text="Project Added: C:\Users\Zhihui\Documents\GitHub\Drive\ClientApp\ClientAppModelingLib\ClientAppModelingLib.csproj" />
+  <Message Timestamp="2015-05-10T21:42:44" Importance="Medium" Text="'ClientAppModeling::ItemsForBorrow' -  (Class) : success (file created) - C:\Users\Zhihui\Documents\GitHub\Drive\ClientApp\ClientAppModelingLib\GeneratedCode\ItemsForBorrow.cs" />
+  <Message Timestamp="2015-05-10T21:42:47" Importance="Medium" Text="'ClientAppModeling::Camping' -  (Class) : success (file created) - C:\Users\Zhihui\Documents\GitHub\Drive\ClientApp\ClientAppModelingLib\GeneratedCode\Camping.cs" />
+  <Message Timestamp="2015-05-10T21:42:49" Importance="Medium" Text="'ClientAppModeling::User' -  (Class) : success (file created) - C:\Users\Zhihui\Documents\GitHub\Drive\ClientApp\ClientAppModelingLib\GeneratedCode\User.cs" />
+  <Message Timestamp="2015-05-10T21:42:50" Importance="Medium" Text="'ClientAppModeling::Event' -  (Class) : success (file created) - C:\Users\Zhihui\Documents\GitHub\Drive\ClientApp\ClientAppModelingLib\GeneratedCode\Event.cs" />
+  <Message Timestamp="2015-05-10T21:42:51" Importance="Medium" Text="'ClientAppModeling::ItemsForSell' -  (Class) : success (file created) - C:\Users\Zhihui\Documents\GitHub\Drive\ClientApp\ClientAppModelingLib\GeneratedCode\ItemsForSell.cs" />
+  <Message Timestamp="2015-05-10T21:42:52" Importance="Medium" Text="'ClientAppModeling::AccountTransaction' -  (Class) : success (file created) - C:\Users\Zhihui\Documents\GitHub\Drive\ClientApp\ClientAppModelingLib\GeneratedCode\AccountTransaction.cs" />
+  <Message Timestamp="2015-05-10T21:42:52" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2015-05-10T21:42:52" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-05-10T21:42:52" Importance="Diagnostic" Text="ProjectPath = ..\ClientAppModelingLib\ClientAppModelingLib.csproj" />
+  <Message Timestamp="2015-05-10T21:42:52" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-05-10T21:42:52" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-05-10T21:42:52" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-05-10T21:42:52" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-05-10T21:42:52" Importance="Medium" Text="ClientAppModeling's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'ClientAppModeling::ItemsForBorrow' -  (Class), 'ClientAppModeling::Camping' -  (Class), 'ClientAppModeling::User' -  (Class), 'ClientAppModeling::Event' -  (Class), 'ClientAppModeling::ItemsForSell' -  (Class), 'ClientAppModeling::AccountTransaction' -  (Class) " />
+  <Message Timestamp="2015-05-10T21:42:54" Importance="Diagnostic" Text="'ClientAppModeling::ItemsForBorrow' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-05-10T21:42:54" Importance="Diagnostic" Text="'ClientAppModeling::Camping' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-05-10T21:42:54" Importance="Diagnostic" Text="'ClientAppModeling::User' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-05-10T21:42:54" Importance="Diagnostic" Text="'ClientAppModeling::Event' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-05-10T21:42:55" Importance="Diagnostic" Text="'ClientAppModeling::ItemsForSell' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-05-10T21:42:55" Importance="Diagnostic" Text="'ClientAppModeling::AccountTransaction' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-05-10T21:42:55" Importance="Diagnostic" Text="The selection included 2 elements which were not bound to a template." />
+  <Message Timestamp="2015-05-10T21:42:55" Importance="Diagnostic" Text="'ClientAppModeling::' -  (Association): no bound template." />
+  <Message Timestamp="2015-05-10T21:42:55" Importance="Diagnostic" Text="'ClientAppModeling::' -  (Association): no bound template." />
+  <Message Timestamp="2015-05-10T21:42:55" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>
