@@ -28,12 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StoreForm));
             this.button1 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.ItemID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Type = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Quantity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.TBFirstName = new System.Windows.Forms.TextBox();
@@ -42,6 +46,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.listView2 = new System.Windows.Forms.ListView();
@@ -52,10 +57,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BTcheckInOut = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -75,12 +79,14 @@
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ItemID,
+            this.Name,
             this.Type,
             this.Price,
             this.Quantity});
             this.listView1.Location = new System.Drawing.Point(12, 76);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(318, 426);
+            this.listView1.SmallImageList = this.imageList1;
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -89,6 +95,10 @@
             // 
             this.ItemID.Text = "ItemID";
             this.ItemID.Width = 71;
+            // 
+            // Name
+            // 
+            this.Name.Text = "Name";
             // 
             // Type
             // 
@@ -104,6 +114,21 @@
             // 
             this.Quantity.Text = "Quantity In Store";
             this.Quantity.Width = 97;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Coke.jpg");
+            this.imageList1.Images.SetKeyName(1, "Diet.jpg");
+            this.imageList1.Images.SetKeyName(2, "red bull.jpg");
+            this.imageList1.Images.SetKeyName(3, "water.jpg");
+            this.imageList1.Images.SetKeyName(4, "fanta.jpg");
+            this.imageList1.Images.SetKeyName(5, "sprite.jpg");
+            this.imageList1.Images.SetKeyName(6, "cider.jpg");
+            this.imageList1.Images.SetKeyName(7, "JD.png");
+            this.imageList1.Images.SetKeyName(8, "Henineken.jpg");
+            this.imageList1.Images.SetKeyName(9, "Bavaria.jpg");
             // 
             // label1
             // 
@@ -191,6 +216,16 @@
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Basket";
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(176, 414);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(82, 30);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Order";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -280,6 +315,18 @@
             this.BTcheckInOut.TabIndex = 14;
             this.BTcheckInOut.Text = "Put into the Basket";
             this.BTcheckInOut.UseVisualStyleBackColor = true;
+            this.BTcheckInOut.Click += new System.EventHandler(this.BTcheckInOut_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(10, 147);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(169, 30);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Get out from Basket";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -298,26 +345,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(173, 27);
             this.textBox2.TabIndex = 12;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(10, 147);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(169, 30);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Get out from Basket";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(176, 414);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 30);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Order";
-            this.button3.UseVisualStyleBackColor = true;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // StoreForm
             // 
@@ -331,8 +359,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.button1);
-            this.Name = "StoreForm";
-            this.Text = "StoreForm";
+    //        this.Name = "StoreForm";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -374,5 +401,7 @@
         private System.Windows.Forms.Button BTcheckInOut;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ColumnHeader Name;
     }
 }
