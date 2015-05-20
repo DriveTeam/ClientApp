@@ -44,7 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
     <Compile Include="Items.cs" />
+    <Compile Include="Classes\AccountTransaction.cs" />
+    <Compile Include="Classes\Camping.cs" />
+    <Compile Include="Classes\Event.cs" />
+    <Compile Include="Classes\ItemsForBorrow.cs" />
+    <Compile Include="Classes\ItemsForSell.cs" />
+    <Compile Include="Classes\User.cs" />
+
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +65,7 @@
     <Compile Include="CheckInOutForm.Designer.cs">
       <DependentUpon>CheckInOutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Person.cs" />
     <Compile Include="ReceptionForm.cs">
       <SubType>Form</SubType>
     </Compile>
